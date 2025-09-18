@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: whitesmoke;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+header {
+  background: black;
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-bottom: 2px solid #2c2c2c;
+}
+
+/* Logo */
+header .logo img {
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 8px #c3f375);
+  transition: transform 0.3s;
+}
+header .logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Título e slogan */
+header h1 {
+  font-size: 30px;
+  color: white;
+}
+header .slogan {
+  font-size: 20px;
+  margin-top: 5px;
+  font-style: italic;
+  color: #bdbdbd;
+}
+
+/* Menu */
+header nav {
+  margin-top: 15px;
+  background: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+}
+header nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #c3f375;
+}
+
+/* Formulário */
+main {
+  margin-top: 15px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+form {
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  width: 100%;
+  max-width: 600px;
+}
+form h2 {
+  text-align: center;
+  color: #c3f375;
+  margin-bottom: 15px;
+}
+form p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs, textarea e select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  margin-top: 5px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #c3f375;
+  outline: none;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #c3f375;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #c3f375;
+  transform: scale(1.05);
+}
+
+/* Tabela do formulário */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+/* Rodapé */
+footer {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-top: 2px solid white;
+}

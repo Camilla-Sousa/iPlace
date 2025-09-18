@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+    
+header {
+    background: black;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid #2c2c2c;
+        }
+    
+header .logo img {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 8px #c3f375);
+    transition: transform 0.3s;
+    }
+    
+header .logo img:hover {
+    transform: scale(1.05);
+    }
+    
+header h1 {
+    font-size: 30px;
+    color: white;
+    }
+    
+header .slogan {
+    font-size: 20px;
+    margin-top: 5px;
+    font-style: italic;
+    color: #bdbdbd;
+    }
+    
+header nav {
+    margin-top: 15px;
+    background: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    }
+    
+header nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+    
+header nav a:hover {
+    color: #c3f375;
+    }
+    
+.produtos h2,
+.lista-produtos h3,
+.lista-produtos p {
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    }
+    
+.lista-produtos article {
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+.lista-produtos img {
+    width: 180px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    }
+    
+.lista-produtos img:hover {
+    transform: scale(1.05);
+    }
+    
+.negrito {
+    font-weight: bold;
+    color: #c3f375;
+    margin-top: 5px;
+    }
+    
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    }
+    
+footer {
+    background: #1e1e1e;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #2c2c2c;
+    }
+    

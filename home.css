@@ -1,0 +1,165 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: whitesmoke;  /* fundo preto #121212*/
+    color: #e0e0e0;       /* texto cinza claro */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: black;   /* cinza escuro */
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid #2c2c2c;
+}
+
+header .logo img {
+    width: auto;
+    transition: transform 0.3s;
+    height: 100px;
+    border-radius: 50%;     /* torna redonda */
+    position: absolute;
+    background: none;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 8px #c3f375);
+    transition: transform 0.3s;
+    top: 30px;
+    left: 20px;
+    
+}
+
+
+header .logo img:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    font-size: 30px;
+    color: white;  /* verde da logo #c3f375*/
+}
+
+
+
+header .slogan {
+    font-size: 20px;
+    margin-top: 5px;
+    font-style: italic;
+    color: #bdbdbd;
+}
+
+header nav {
+    margin-top: 15px;
+    background: #1e1e1e;       /* fundo escuro do menu */
+    padding: 10px 20px;        /* espaço interno */
+    border-radius: 25px;       /* borda arredondada */
+    display: inline-block;     /* faz o menu ocupar só o necessário */
+}
+
+header nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #c3f375;
+}
+
+/* Container principal (grid) */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Conteúdo */
+.conteudo h2 {
+    
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.conteudo p {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Cards de produtos */
+.card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.8);
+}
+
+.card img {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: white;
+}
+
+/* Sidebar */
+.sidebar h2 {
+    color: black;
+    margin: 15px ;
+    padding: 10px;
+}
+
+.sidebar a {
+    display: block;
+    background: #1e1e1e;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e0e0e0;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.sidebar a:hover {
+    transform: scale(1.02);
+    background: #2c2c2c;
+}
+
+.sidebar img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+/* Rodapé */
+footer {
+    background: #1e1e1e;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #2c2c2c;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>iPlace - Fale Conosco</title>
+  <link rel="stylesheet" href="contato.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Logo da Iplace">
+    </a>
+    <h1>iPlace</h1>
+    <p class="slogan">O nosso compromisso é você satisfeito!</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Fale Conosco</a>
+    </nav>
+</header>
+
+  <main>
+    <section>
+      <h2 style=" color: black;">Fale Conosco</h2>
+      <p style=" color: black;">Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+      <form action="enviar_contato.php" method="post">
+        <table>
+          <tr>
+            <td><label for="nome">Nome:</label></td>
+            <td><input type="text" id="nome" name="nome" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td><label for="telefone">Telefone:</label></td>
+            <td><input type="tel" id="telefone" name="telefone" required></td>
+          </tr>
+          <tr>
+            <td><label for="assunto">Assunto:</label></td>
+            <td>
+              <select id="assunto" name="assunto">
+                <option value="duvidas">Dúvidas</option>
+                <option value="suporte">Suporte Técnico</option>
+                <option value="vendas">Informações sobre Vendas</option>
+                <option value="outros">Outros</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Qual produto você deseja retratar:</label></td>
+            <td>
+              <input type="radio" id="iphone" name="produto" value="Iphone">
+              <label for="iphone">iPhone</label><br>
+      
+              <input type="radio" id="macbook" name="produto" value="MacBook">
+              <label for="macbook">MacBook</label><br>
+      
+              <input type="radio" id="airpods" name="produto" value="AirPods">
+              <label for="airpods">iPad</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="satisfacao">Nível de satisfação (0 a 10):</label></td>
+            <td><input type="number" id="satisfacao" name="satisfacao" min="0" max="10" required></td>
+          </tr>
+          <tr>
+            <td><label for="mensagem">Mensagem:</label></td>
+            <td><textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpar">
+            </td>
+          </tr>
+        </table>
+      </form>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Iplace - Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
